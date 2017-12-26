@@ -1,4 +1,5 @@
-![](./SportsImages3/c25685b6aed3348e60fe98602a00806f9596332a.png)
+![](./SportsImages/media/image1.png){width="9.895833333333334in"
+height="4.259027777777778in"}
 
 Deployment Summary
 ==================
@@ -81,12 +82,16 @@ deployment
   West Europe         Focused on European markets, no administrative capabilities will be deployed in this deployment.
   Japan West          Focused on Asian markets, no administrative capabilities will be deployed in this deployment and it will be the smallest of all deployments.
 
+![](./SportsImages/media/image4.emf){width="4.550075459317585in"
+height="3.4320002187226595in"}
+
 Components
 ----------
 
 The following components will be deployed as part of this guide.
 
-![](./SportsImages3/7d96839d703ab90d64b64d1b652bf6f186258b68.png)
+![](./SportsImages/media/image5.png){width="5.064000437445319in"
+height="5.782482502187227in"}
 
 +-----------------------------------+-----------------------------------+
 | Component                         | Description                       |
@@ -281,9 +286,9 @@ artifacts that will be used to deploy the solution:
     and Configuration json files.
 
 -   Custom provisioning operations. These custom [PowerShell
-    CmdLets](https://technet.microsoft.com/en-us/library/dd772285.aspx)[^1^](#fn1){#fnref1
-    .footnote-ref} are used to provide additional capabilities required
-    to provision the environment.
+    CmdLets](https://technet.microsoft.com/en-us/library/dd772285.aspx)[^1]
+    are used to provide additional capabilities required to provision
+    the environment.
 
     **The deployment scripts will drive the process, as described in
     this document: however the configuration of the environment is up to
@@ -321,7 +326,7 @@ software must be set up:
 
 -   **Microsoft Azure subscription**
 
--   **Microsoft .NET framework 4.6 or more**
+-   **Microsoft .NET framework 4.6 or more **
 
 -   **Microsoft Azure PowerShell 2.0.1 (Installer:** **link)**
 
@@ -375,10 +380,10 @@ in the app's configuration screen as the number of your deployment
 locations. And for the production environment you may always want to
 have the Reply URL corresponding to the Traffic Manager URL.
 
-**You also** need to create two roles[^2^](#fn2){#fnref2 .footnote-ref}
-(***PlatformAdmin*** and ***ContentAdmin***) in both Web Admin and Web
-API web applications that you'll be creating. The roles manifest is
-available in Appendix A: Application Role Definition.
+**You also** need to create two roles[^2] (***PlatformAdmin*** and
+***ContentAdmin***) in both Web Admin and Web API web applications that
+you'll be creating. The roles manifest is available in Appendix A:
+Application Role Definition.
 
 +-------------+-------------+-------------+-------------+-------------+
 | Name        | Type        | SIGN-ON URL | APP ID URI  | Config      |
@@ -485,9 +490,11 @@ application to which you would like to assign users and groups. Select a
 user and click on the **Assign** action on the bottom bar. Here you can
 assign the desired role to the user.
 
-![](./SportsImages3/edbf77440cc40e2843af127af47e74ef61f66384.png)
+![](./SportsImages/media/image6.png){width="6.5in"
+height="2.1152777777777776in"}
 
-> ![](./SportsImages3/8ec417805aa2f26ccfd1d08278783704784fd4d8.png)
+> ![](./SportsImages/media/image7.png){width="3.432292213473316in"
+> height="2.343934820647419in"}
 
 Azure AD B2C Fans tenant
 ------------------------
@@ -509,12 +516,14 @@ co-administrator.
     the b2c Administration in the Configure page of the directory you
     just created:
 
-    ![](./SportsImages3/a0450d795173fe7a572fcfd588d0e830ba9b262f.png)
+    ![](./SportsImages/media/image8.png){width="6.16950021872266in"
+    height="3.817707786526684in"}
 
     Then, you can add a new custom attribute by accessing the collection
     of User Attributes as it is shown on the following screenshot:
 
-    ![](./SportsImages3/70ff6ed9f3c3987964075ab6b6b009c04a74d50e.png)
+    ![](./SportsImages/media/image9.png){width="6.5in"
+    height="2.7194444444444446in"}
 
     The list of all custom attributes is listed below:
 
@@ -564,7 +573,8 @@ co-administrator.
 
     a.  **Identity providers**
 
-        ![](./SportsImages3/b47cbf442aead44c542b9c65ce37243bc044945c.png)
+        ![](./SportsImages/media/image10.png){width="4.791666666666667in"
+        height="1.393474409448819in"}
 
     b.  **Sign-up attributes:**
 
@@ -699,7 +709,8 @@ B2C Custom Policies
 > provider and you may want to keep those that are applicable to your
 > implementation.
 >
-> ![](./SportsImages3/5435a356bfdc9732171b8a92bdc5921107e9154e.png)
+> ![](./SportsImages/media/image11.png){width="6.49375in"
+> height="5.378472222222222in"}
 
 Image 1: Local Account Sign-In policy section
 
@@ -713,7 +724,8 @@ Image 1: Local Account Sign-In policy section
 > and not direct text. The key itself is created in the B2C tenant with
 > the value extracted from Facebook app.
 >
-> ![](./SportsImages3/160791e6a9430025e5f2951d5082d0a6f8fec342.png)
+> ![](./SportsImages/media/image12.png){width="6.5in"
+> height="5.166666666666667in"}
 
 Image 2: Facebook technical profile
 
@@ -721,11 +733,13 @@ Image 2: Facebook technical profile
 > your Facebook App setup as an Identity provider. Please follow this
 > link to setup Facebook as an Identity provider.
 >
-> ![](./SportsImages3/b917ba512f88951072c4a95e0f6206806ad6ad4f.png)
+> ![](./SportsImages/media/image13.png){width="6.5in"
+> height="1.9291666666666667in"}
 
 Image 3: Facebook App ID and Secret
 
-> ![](./SportsImages3/0368c8fb588938fb5614caf0fe5be71ed29a5ef7.png)
+> ![](./SportsImages/media/image14.png){width="6.5in"
+> height="2.3333333333333335in"}
 
 Image 4: Facebook App redirect URIs
 
@@ -741,11 +755,12 @@ Image 4: Facebook App redirect URIs
 > "StorageReferenceId" and not direct text. The key itself is created in
 > the B2C tenant with the value extracted from Google app.
 >
-> ![](./SportsImages3/d111dc50475e178ad37783430f13a3a1c9fb62ef.png)
+> ![](./SportsImages/media/image15.png){width="6.5in" height="5.25in"}
 
 Image 5: Google technical profile
 
-> ![](./SportsImages3/3800730d18207ce0df4636b0d5e4cd9e78f93120.png)
+> ![](./SportsImages/media/image16.png){width="6.5in"
+> height="4.416666666666667in"}
 
 Image 6: Google client ID & secret
 
@@ -761,7 +776,8 @@ Below technical profile in the custom policy corresponds to the first
 REST API that gets called upon first user sign-up. Note that the
 InputClaims are passed along as parameters to the first REST call.
 
-![](./SportsImages3/cdba224350e6e4bd32f95557fd17e84de875a7a7.png)
+![](./SportsImages/media/image17.png){width="6.5in"
+height="3.4243055555555557in"}
 
 Image 7: Technical Profile for REST Call
 
@@ -770,7 +786,8 @@ social sign-up i.e. when sign-in happens from one of the external
 identity providers (Facebook/Google). This call also records the
 registered user as a Fan in the sports digital platform.
 
-![](./SportsImages3/730783abbbcc86700937c2d34e53ae10569984ad.png)
+![](./SportsImages/media/image18.png){width="6.492361111111111in"
+height="3.4243055555555557in"}
 
 Image 8: Technical profile for Social REST API
 
@@ -780,7 +797,7 @@ Azure AD B2C. Some of these technical profiles are named as AAD-Common,
 AAD-UserWriteUsingAlternativeSecurityId etc (basically those prefixed
 with AAD).
 
-### User Journey
+### User Journey 
 
 Technical profiles described above are combined to provide an end-to-end
 user experience. The profile "LocalAccountSignUpWithLogonEmail" in below
@@ -788,7 +805,8 @@ image is responsible for invoking the REST call to add the user as Fan
 and also create its profile in AD B2C. This is achieved by creating
 ValidationTechnicalProfiles as below.
 
-![](./SportsImages3/05e2587001d90eb9f290a7a66f35245f13417fbf.png)
+![](./SportsImages/media/image19.png){width="6.492361111111111in"
+height="3.7805555555555554in"}
 
 Image 9: LocalAccountSignUpWithLogonEmail technical profile
 
@@ -802,7 +820,8 @@ various orchestration steps that are to be executed in the entire
 journey. User Journey use technical profiles to orchestrate the overall
 sign-up/sign-in journey of the user.
 
-![](./SportsImages3/944a310994035a51dba31cd93686e1b114052f14.png)
+![](./SportsImages/media/image20.png){width="6.5in"
+height="3.515277777777778in"}
 
 Image 10: SelfAsserted-Social technical profile
 
@@ -811,7 +830,8 @@ Image 10: SelfAsserted-Social technical profile
 The policies created using the steps listed above are uploaded in the
 B2C blade of your Azure AD B2C tenant.
 
-![](./SportsImages3/e9b1dc3cf729d1613dd2c3a4e4e55cdf26871030.png)
+![](./SportsImages/media/image21.png){width="6.492361111111111in"
+height="3.2118055555555554in"}
 
 Image 11: Identity Experience Framework B2C blade
 
@@ -819,7 +839,8 @@ The end customer application through which Fans will access the platform
 will have to be authenticated in the B2C tenant. B2C will use
 application ID to authenticate the app.
 
-![](./SportsImages3/7c68829f8a2fea97d5968589c551f1f8b53b44e9.png)
+![](./SportsImages/media/image22.png){width="6.5in"
+height="2.386111111111111in"}
 
 Image 12: Identity Experience Framework- Applications
 
@@ -829,7 +850,8 @@ Azure facilitates testing of custom policies through Identity Experience
 Framework. Select SignUpSignIn policy from Identity Experience Framework
 blade of the B2C.
 
-![](./SportsImages3/75a5c1afbd0fbc059b19f6ceb979429ec92c5751.png)
+![](./SportsImages/media/image23.png){width="6.10625in"
+height="4.711805555555555in"}
 
 Image 13: Test User Experience- Run now
 
@@ -840,7 +862,8 @@ on this page are corresponding to those listed in the User Journey
 section of the custom policies. Proceed to test all the flows as created
 in your custom policies.
 
-![](./SportsImages3/98b6b3bfcea926e8c9d6aec0c93a47074a67fe20.png)
+![](./SportsImages/media/image24.png){width="6.492361111111111in"
+height="3.1666666666666665in"}
 
 Image 14: Test end-to-end User Experience
 
@@ -879,7 +902,8 @@ command prompt using MSBuild.
 
         MSBuild LocalBuild.proj /p:ConditionDeployOnBuild=true
 
-    ![](./SportsImages3/85b0c743144f16cd39e804cb221dbd1fe2e6044c.png)
+    ![](./SportsImages/media/image25.png){width="5.815217629046369in"
+    height="0.7430555555555556in"}
 
     This may take between 10 and 15 minutes the first time between
     downloading all NuGet packages and actual compilation.
@@ -894,7 +918,8 @@ Once the build completes there will be a new folder
 *DigitalPlatform\\Binaries.* If the build completed successfully, there
 will be a subfolder called Version with the following structure:
 
-![](./SportsImages3/8cad97574f80daa26eca11bb34c3c1e1567b328a.png)
+![](./SportsImages/media/image26.png){width="6.090277777777778in"
+height="7.824305555555555in"}
 
 Azure Setup Process
 ===================
@@ -946,18 +971,20 @@ pre-requisites:
     should be provided in the Azureenvironmentparameters file.
 
 -   After you run the commands, export the PFX and CER files for the
-    certificate.[^3^](#fn3){#fnref3 .footnote-ref}
+    certificate.[^3]
 
     -   Some screen shots using Microsoft management console for
         Exporting certificates are given below
 
         [MMC -- Certificate tree node]{.underline}
 
-        ![](./SportsImages3/a38806d041cdfe3925e768b59a4ea2243be56cf9.png)
+        ![](./SportsImages/media/image27.png){width="5.718055555555556in"
+        height="4.021527777777778in"}
 
         [Export Certificate screen ]{.underline}
 
-        ![](./SportsImages3/07424b26174a362e190450a57eb5ed47eb8f2f81.png)
+        ![](./SportsImages/media/image28.png){width="6.4944444444444445in"
+        height="3.1756944444444444in"}
 
 -   Copy the pfx and certificate files into the
     Binaries\\Version\\MdpAPiWeb\\Application\\Certificates folder
@@ -1078,8 +1105,7 @@ resources:
 Configure an Azure Notification Hub. That will be used to send push
 notifications to different Native Apps. You can use the following guide
 to [Configure the
-Hub](https://azure.microsoft.com/en-us/documentation/articles/notification-hubs-windows-store-dotnet-get-started/#configure-your-notification-hub).[^4^](#fn4){#fnref4
-.footnote-ref}
+Hub](https://azure.microsoft.com/en-us/documentation/articles/notification-hubs-windows-store-dotnet-get-started/#configure-your-notification-hub).[^4]
 
 -   You will need at least one hub for all your applications.
 
@@ -1177,7 +1203,7 @@ referenced in the other configuration elements.
     -   Consider that MDP only stores the identities in DocDb
 
     -   Just like with the storage account sensitive keys can be marked
-        as *TOBEDEFINED*
+        as *TOBEDEFINED *
 
 -   **Azure Search references**
 
@@ -1189,7 +1215,7 @@ referenced in the other configuration elements.
         add the *video platform* reference.
 
     -   Just like with the storage account sensitive keys can be marked
-        as *TOBEDEFINED*
+        as *TOBEDEFINED *
 
 Common Configuration
 --------------------
@@ -1282,7 +1308,8 @@ configuration section.
 
     -   The **TenantId** is the id of the Admin AD you created. (copied
         from the URL address line of the AAD directory tenant, ex.
-        ![](./SportsImages3/5b4c6bb2d7098268b185a39000abe1e24c356a3d.png)
+        ![](./SportsImages/media/image29.png){width="6.5in"
+        height="0.22083333333333333in"}
 
     -   The **Subscription ID** is the Azure Subscription ID where you
         are hosting the solution.
@@ -1419,7 +1446,8 @@ configuration section.
 
             ![Machine generated alternative text: \* Name O Digital
             Platform - Web API A lication Client ID f261
-            ](./SportsImages3/f8322905a353b9b6e7911a671b75345ed6c9028f.png)
+            ](./SportsImages/media/image30.png){width="3.0416666666666665in"
+            height="0.9375in"}
 
     <!-- -->
 
@@ -1514,8 +1542,8 @@ configuration section.
 -   **AVETServicesConfiguration** TODO**\
     **
 
-Deployment configuration.
--------------------------
+Deployment configuration. 
+--------------------------
 
 In this section specific values can be provided for every deployment
 based on the ID.
@@ -1833,64 +1861,66 @@ to create new IDs for every environment.
 Appendix B: Parameter file tokens
 =================================
 
-  TOKEN
-  --------------------------------------------------------------------------------
-  General settings
-  \[custId\]
-  \[env\]
-  [[]{#OLE_LINK6 .anchor}]{#OLE_LINK5 .anchor}\[azureSubscriptionId\]
-  \[globalRegionLocation\]
-  AAD admin tenant settings and apps
-  \[[[]{#OLE_LINK17 .anchor}]{#OLE_LINK16 .anchor}adminTenantName\]
-  \[adminTenantId\]
-  \[webApiAdminClientId\]
-  \[webApiAdminClientSecret\]
-  \[webApiAdminClientId\]
-  \[webApiAdminClientSecret\]
-  \[[[]{#OLE_LINK25 .anchor}]{#OLE_LINK24 .anchor}webControlAppClientId\]
-  \[[[]{#OLE_LINK27 .anchor}]{#OLE_LINK26 .anchor}webControlAppClientSecret\]
-  \[[[]{#OLE_LINK21 .anchor}]{#OLE_LINK20 .anchor}operationsAppClientId\]
-  \[[[]{#OLE_LINK23 .anchor}]{#OLE_LINK22 .anchor}operationsAppClientSecret\]
-  \[[[]{#OLE_LINK19 .anchor}]{#OLE_LINK18 .anchor}powershellScriptsAppClientId\]
-  AAD B2C Tenant settings and apps
-  \[fansTenantName\]
-  \[fansTenantId\]
-  \[webApiB2CClientId\]
-  \[webApiB2CClientSecret\]
-  \[idpAppClientId\]
-  \[idpAppClientSecret\]
-  \[webApib2cAppClientId\]
-  \[officialAppsIdClientGroupGuid\]
-  \[uwpPhoneAppId\]
-  \[uwpTabletAppId\]
-  \[andPhoneAppId\]
-  \[andTabletAppId\]
-  \[iosPhoneAppId\]
-  \[iosTabletAppId\]
-  Video Platform settings
-  \[videoPlatformSearchServiceName\]
-  \[videoPlatformSearchServiceAdminApiKey\]
-  \[videoPlatformSearchServiceSearchApiKey\]
-  Global storage accounts keys
-  \[[[]{#OLE_LINK10 .anchor}]{#OLE_LINK9 .anchor}cdnsaKey\]
-  \[[[]{#OLE_LINK12 .anchor}]{#OLE_LINK11 .anchor}crmsaKey\]
-  \[[]{#OLE_LINK13 .anchor}conexflowsaKey\]
-  \[[[]{#OLE_LINK15 .anchor}]{#OLE_LINK14 .anchor}ticketsdotcomsaKey\]
-  Global notifications hub
-  \[notificationHubGlobalKey\]
-  Region parameters (replace X by a region number
-  \[regionXDeploymentId\]
-  \[regionXLocation\]
-  \[regionXId\]
-  \[configurationsaRegionXKey\]
-  \[mainsaRegionXKey\]
-  \[useractionssaRegionXKey\]
-  \[queuessaRegionXKey\]
-  \[blobsaRegionXKey\]
-  \[rankingssaRegionXKey\]
-  \[documentDbRegionXKey\]
-  \[searchAdminApiRegionXKey\]
-  \[searchQueryRegionXKey\]
+  TOKEN                                                                            DESCRIPTION
+  -------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  General settings                                                                 
+  \[custId\]                                                                       Short (two to four letters) identified for the customer, this identified will be concatenated into the different resource names and it will help ensure that most of the resources created areunique.
+  \[env\]                                                                          Three or four letter environment id (dev, test, pre, prod)
+  [[]{#OLE_LINK6 .anchor}]{#OLE_LINK5 .anchor}\[azureSubscriptionId\]              The GUID for your Azure Subscription
+  \[globalRegionLocation\]                                                         The region to deploy the global resources.
+  AAD admin tenant settings and apps                                               
+  \[[[]{#OLE_LINK17 .anchor}]{#OLE_LINK16 .anchor}adminTenantName\]                
+  \[adminTenantId\]                                                                
+  \[webApiAdminClientId\]                                                          
+  \[webApiAdminClientSecret\]                                                      
+  \[webApiAdminClientId\]                                                          
+  \[webApiAdminClientSecret\]                                                      
+  \[[[]{#OLE_LINK25 .anchor}]{#OLE_LINK24 .anchor}webControlAppClientId\]          
+  \[[[]{#OLE_LINK27 .anchor}]{#OLE_LINK26 .anchor}webControlAppClientSecret\]      
+  \[[[]{#OLE_LINK21 .anchor}]{#OLE_LINK20 .anchor}operationsAppClientId\]          
+  \[[[]{#OLE_LINK23 .anchor}]{#OLE_LINK22 .anchor}operationsAppClientSecret\]      
+  \[[[]{#OLE_LINK19 .anchor}]{#OLE_LINK18 .anchor}powershellScriptsAppClientId\]   
+  AAD B2C Tenant settings and apps                                                 
+  \[fansTenantName\]                                                               
+  \[fansTenantId\]                                                                 
+  \[webApiB2CClientId\]                                                            
+  \[webApiB2CClientSecret\]                                                        
+  \[idpAppClientId\]                                                               
+  \[idpAppClientSecret\]                                                           
+  \[webApib2cAppClientId\]                                                         
+  \[officialAppsIdClientGroupGuid\]                                                
+  \[uwpPhoneAppId\]                                                                
+  \[uwpTabletAppId\]                                                               
+  \[andPhoneAppId\]                                                                
+  \[andTabletAppId\]                                                               
+  \[iosPhoneAppId\]                                                                
+  \[iosTabletAppId\]                                                               
+  Video Platform settings                                                          
+  \[videoPlatformSearchServiceName\]                                               
+  \[videoPlatformSearchServiceAdminApiKey\]                                        
+  \[videoPlatformSearchServiceSearchApiKey\]                                       
+  Global storage accounts keys                                                     
+  \[[[]{#OLE_LINK10 .anchor}]{#OLE_LINK9 .anchor}cdnsaKey\]                        
+  \[[[]{#OLE_LINK12 .anchor}]{#OLE_LINK11 .anchor}crmsaKey\]                       
+  \[[]{#OLE_LINK13 .anchor}conexflowsaKey\]                                        
+  \[[[]{#OLE_LINK15 .anchor}]{#OLE_LINK14 .anchor}ticketsdotcomsaKey\]             
+  Global notifications hub                                                         
+  \[notificationHubGlobalKey\]                                                     
+  Region parameters (replace X by a region number                                  
+  \[regionXDeploymentId\]                                                          Short identifier for the region where assets are being deployed (gl, eu, am, as, etc.)
+  \[regionXLocation\]                                                              Azure region for the resources (euwe, eune, useast, uswest, etc.)
+  \[regionXId\]                                                                    Azure region for the resource (East US, West Europe, etc.)
+                                                                                   
+  \[configurationsaRegionXKey\]                                                    
+  \[mainsaRegionXKey\]                                                             
+  \[useractionssaRegionXKey\]                                                      
+  \[queuessaRegionXKey\]                                                           
+  \[blobsaRegionXKey\]                                                             
+  \[rankingssaRegionXKey\]                                                         
+                                                                                   
+  \[documentDbRegionXKey\]                                                         
+  \[searchAdminApiRegionXKey\]                                                     
+  \[searchQueryRegionXKey\]                                                        
 
 Appendix C: How to enable Implicit flow
 =======================================
@@ -1908,7 +1938,7 @@ Appendix C: How to enable Implicit flow
 |     > the manifest file from \"**Manage Manifest**\" menu.            |
 |                                                                       |
 | ![enter image description                                             |
-| here](./SportsImages3/157b8fbc9b4d97597ce06eac71046d51fb47cf7e.png)   |
+| here](./SportsImages/media/image31.png){width="1.4in" height="1.3in"} |
 |                                                                       |
 | 2.  Search for **oauth2AllowImplicitFlow** and change the value to    |
 |     > true.                                                           |
@@ -1965,33 +1995,19 @@ will be prompted for a security password so unauthorized persons cannot
 steal your identities. While the line has set this password to
 \'secret,\' you should, of course, choose a stronger one.
 
-::: {.section .footnotes}
+[^1]: See <https://technet.microsoft.com/en-us/library/dd772285.aspx>
 
-------------------------------------------------------------------------
-
-1.  ::: {#fn1}
-    See
-    <https://technet.microsoft.com/en-us/library/dd772285.aspx>[↩](#fnref1){.footnote-back}
-    :::
-
-2.  ::: {#fn2}
-    You can find instructions on how to create Application Roles in the
-    following pages:
+[^2]: You can find instructions on how to create Application Roles in
+    the following pages:
     <https://azure.microsoft.com/en-us/documentation/samples/active-directory-dotnet-webapp-roleclaims/>
     and
-    <http://www.dushyantgill.com/blog/2014/12/10/roles-based-access-control-in-cloud-applications-using-azure-ad/>[↩](#fnref2){.footnote-back}
-    :::
+    <http://www.dushyantgill.com/blog/2014/12/10/roles-based-access-control-in-cloud-applications-using-azure-ad/>
 
-3.  ::: {#fn3}
-    A guide to do it from the command line can be found at [Appendix D
+[^3]: A guide to do it from the command line can be found at [Appendix D
     Exporting Certificate with private
     key](#appendix-d-exporting-certificate-with-private-key) . Another
     option is to use the Microsoft Management (mmc) console to do the
-    export operation[↩](#fnref3){.footnote-back}
-    :::
+    export operation
 
-4.  ::: {#fn4}
-    You can use the ARM Azure Portal to create the Hubs and avoid
-    requiring co-administrative privileges.[↩](#fnref4){.footnote-back}
-    :::
-:::
+[^4]: You can use the ARM Azure Portal to create the Hubs and avoid
+    requiring co-administrative privileges.
