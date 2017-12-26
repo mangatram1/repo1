@@ -1,4 +1,4 @@
-![](.\SportsImages/media/image1.png){width="9.895833333333334in"
+![](./SportsImages/media/image1.png){width="9.895833333333334in"
 height="4.259027777777778in"}
 
 Deployment Summary
@@ -82,7 +82,7 @@ deployment
   West Europe         Focused on European markets, no administrative capabilities will be deployed in this deployment.
   Japan West          Focused on Asian markets, no administrative capabilities will be deployed in this deployment and it will be the smallest of all deployments.
 
-![](.\SportsImages/media/image4.emf){width="4.550075459317585in"
+![](./SportsImages/media/image4.emf){width="4.550075459317585in"
 height="3.4320002187226595in"}
 
 Components
@@ -90,7 +90,7 @@ Components
 
 The following components will be deployed as part of this guide.
 
-![](.\SportsImages/media/image5.png){width="5.064000437445319in"
+![](./SportsImages/media/image5.png){width="5.064000437445319in"
 height="5.782482502187227in"}
 
 +-----------------------------------+-----------------------------------+
@@ -490,10 +490,10 @@ application to which you would like to assign users and groups. Select a
 user and click on the **Assign** action on the bottom bar. Here you can
 assign the desired role to the user.
 
-![](.\SportsImages/media/image6.png){width="6.5in"
+![](./SportsImages/media/image6.png){width="6.5in"
 height="2.1152777777777776in"}
 
-> ![](.\SportsImages/media/image7.png){width="3.432292213473316in"
+> ![](./SportsImages/media/image7.png){width="3.432292213473316in"
 > height="2.343934820647419in"}
 
 Azure AD B2C Fans tenant
@@ -516,13 +516,13 @@ co-administrator.
     the b2c Administration in the Configure page of the directory you
     just created:
 
-    ![](.\SportsImages/media/image8.png){width="6.16950021872266in"
+    ![](./SportsImages/media/image8.png){width="6.16950021872266in"
     height="3.817707786526684in"}
 
     Then, you can add a new custom attribute by accessing the collection
     of User Attributes as it is shown on the following screenshot:
 
-    ![](.\SportsImages/media/image9.png){width="6.5in"
+    ![](./SportsImages/media/image9.png){width="6.5in"
     height="2.7194444444444446in"}
 
     The list of all custom attributes is listed below:
@@ -573,7 +573,7 @@ co-administrator.
 
     a.  **Identity providers**
 
-        ![](.\SportsImages/media/image10.png){width="4.791666666666667in"
+        ![](./SportsImages/media/image10.png){width="4.791666666666667in"
         height="1.393474409448819in"}
 
     b.  **Sign-up attributes:**
@@ -709,7 +709,7 @@ B2C Custom Policies
 > provider and you may want to keep those that are applicable to your
 > implementation.
 >
-> ![](.\SportsImages/media/image11.png){width="6.49375in"
+> ![](./SportsImages/media/image11.png){width="6.49375in"
 > height="5.378472222222222in"}
 
 Image 1: Local Account Sign-In policy section
@@ -724,7 +724,7 @@ Image 1: Local Account Sign-In policy section
 > and not direct text. The key itself is created in the B2C tenant with
 > the value extracted from Facebook app.
 >
-> ![](.\SportsImages/media/image12.png){width="6.5in"
+> ![](./SportsImages/media/image12.png){width="6.5in"
 > height="5.166666666666667in"}
 
 Image 2: Facebook technical profile
@@ -733,12 +733,12 @@ Image 2: Facebook technical profile
 > your Facebook App setup as an Identity provider. Please follow this
 > link to setup Facebook as an Identity provider.
 >
-> ![](.\SportsImages/media/image13.png){width="6.5in"
+> ![](./SportsImages/media/image13.png){width="6.5in"
 > height="1.9291666666666667in"}
 
 Image 3: Facebook App ID and Secret
 
-> ![](.\SportsImages/media/image14.png){width="6.5in"
+> ![](./SportsImages/media/image14.png){width="6.5in"
 > height="2.3333333333333335in"}
 
 Image 4: Facebook App redirect URIs
@@ -755,11 +755,11 @@ Image 4: Facebook App redirect URIs
 > "StorageReferenceId" and not direct text. The key itself is created in
 > the B2C tenant with the value extracted from Google app.
 >
-> ![](.\SportsImages/media/image15.png){width="6.5in" height="5.25in"}
+> ![](./SportsImages/media/image15.png){width="6.5in" height="5.25in"}
 
 Image 5: Google technical profile
 
-> ![](.\SportsImages/media/image16.png){width="6.5in"
+> ![](./SportsImages/media/image16.png){width="6.5in"
 > height="4.416666666666667in"}
 
 Image 6: Google client ID & secret
@@ -776,7 +776,7 @@ Below technical profile in the custom policy corresponds to the first
 REST API that gets called upon first user sign-up. Note that the
 InputClaims are passed along as parameters to the first REST call.
 
-![](.\SportsImages/media/image17.png){width="6.5in"
+![](./SportsImages/media/image17.png){width="6.5in"
 height="3.4243055555555557in"}
 
 Image 7: Technical Profile for REST Call
@@ -786,7 +786,7 @@ social sign-up i.e. when sign-in happens from one of the external
 identity providers (Facebook/Google). This call also records the
 registered user as a Fan in the sports digital platform.
 
-![](.\SportsImages/media/image18.png){width="6.492361111111111in"
+![](./SportsImages/media/image18.png){width="6.492361111111111in"
 height="3.4243055555555557in"}
 
 Image 8: Technical profile for Social REST API
@@ -805,7 +805,7 @@ image is responsible for invoking the REST call to add the user as Fan
 and also create its profile in AD B2C. This is achieved by creating
 ValidationTechnicalProfiles as below.
 
-![](.\SportsImages/media/image19.png){width="6.492361111111111in"
+![](./SportsImages/media/image19.png){width="6.492361111111111in"
 height="3.7805555555555554in"}
 
 Image 9: LocalAccountSignUpWithLogonEmail technical profile
@@ -820,7 +820,7 @@ various orchestration steps that are to be executed in the entire
 journey. User Journey use technical profiles to orchestrate the overall
 sign-up/sign-in journey of the user.
 
-![](.\SportsImages/media/image20.png){width="6.5in"
+![](./SportsImages/media/image20.png){width="6.5in"
 height="3.515277777777778in"}
 
 Image 10: SelfAsserted-Social technical profile
@@ -830,7 +830,7 @@ Image 10: SelfAsserted-Social technical profile
 The policies created using the steps listed above are uploaded in the
 B2C blade of your Azure AD B2C tenant.
 
-![](.\SportsImages/media/image21.png){width="6.492361111111111in"
+![](./SportsImages/media/image21.png){width="6.492361111111111in"
 height="3.2118055555555554in"}
 
 Image 11: Identity Experience Framework B2C blade
@@ -839,7 +839,7 @@ The end customer application through which Fans will access the platform
 will have to be authenticated in the B2C tenant. B2C will use
 application ID to authenticate the app.
 
-![](.\SportsImages/media/image22.png){width="6.5in"
+![](./SportsImages/media/image22.png){width="6.5in"
 height="2.386111111111111in"}
 
 Image 12: Identity Experience Framework- Applications
@@ -850,7 +850,7 @@ Azure facilitates testing of custom policies through Identity Experience
 Framework. Select SignUpSignIn policy from Identity Experience Framework
 blade of the B2C.
 
-![](.\SportsImages/media/image23.png){width="6.10625in"
+![](./SportsImages/media/image23.png){width="6.10625in"
 height="4.711805555555555in"}
 
 Image 13: Test User Experience- Run now
@@ -862,7 +862,7 @@ on this page are corresponding to those listed in the User Journey
 section of the custom policies. Proceed to test all the flows as created
 in your custom policies.
 
-![](.\SportsImages/media/image24.png){width="6.492361111111111in"
+![](./SportsImages/media/image24.png){width="6.492361111111111in"
 height="3.1666666666666665in"}
 
 Image 14: Test end-to-end User Experience
@@ -902,7 +902,7 @@ command prompt using MSBuild.
 
         MSBuild LocalBuild.proj /p:ConditionDeployOnBuild=true
 
-    ![](.\SportsImages/media/image25.png){width="5.815217629046369in"
+    ![](./SportsImages/media/image25.png){width="5.815217629046369in"
     height="0.7430555555555556in"}
 
     This may take between 10 and 15 minutes the first time between
@@ -918,7 +918,7 @@ Once the build completes there will be a new folder
 *DigitalPlatform\\Binaries.* If the build completed successfully, there
 will be a subfolder called Version with the following structure:
 
-![](.\SportsImages/media/image26.png){width="6.090277777777778in"
+![](./SportsImages/media/image26.png){width="6.090277777777778in"
 height="7.824305555555555in"}
 
 Azure Setup Process
@@ -978,12 +978,12 @@ pre-requisites:
 
         [MMC -- Certificate tree node]{.underline}
 
-        ![](.\SportsImages/media/image27.png){width="5.718055555555556in"
+        ![](./SportsImages/media/image27.png){width="5.718055555555556in"
         height="4.021527777777778in"}
 
         [Export Certificate screen ]{.underline}
 
-        ![](.\SportsImages/media/image28.png){width="6.4944444444444445in"
+        ![](./SportsImages/media/image28.png){width="6.4944444444444445in"
         height="3.1756944444444444in"}
 
 -   Copy the pfx and certificate files into the
@@ -1308,7 +1308,7 @@ configuration section.
 
     -   The **TenantId** is the id of the Admin AD you created. (copied
         from the URL address line of the AAD directory tenant, ex.
-        ![](.\SportsImages/media/image29.png){width="6.5in"
+        ![](./SportsImages/media/image29.png){width="6.5in"
         height="0.22083333333333333in"}
 
     -   The **Subscription ID** is the Azure Subscription ID where you
@@ -1446,7 +1446,7 @@ configuration section.
 
             ![Machine generated alternative text: \* Name O Digital
             Platform - Web API A lication Client ID f261
-            ](.\SportsImages/media/image30.png){width="3.0416666666666665in"
+            ](./SportsImages/media/image30.png){width="3.0416666666666665in"
             height="0.9375in"}
 
     <!-- -->
@@ -1938,7 +1938,7 @@ Appendix C: How to enable Implicit flow
 |     > the manifest file from \"**Manage Manifest**\" menu.            |
 |                                                                       |
 | ![enter image description                                             |
-| here](.\SportsImages/media/image31.png){width="1.4in" height="1.3in"} |
+| here](./SportsImages/media/image31.png){width="1.4in" height="1.3in"} |
 |                                                                       |
 | 2.  Search for **oauth2AllowImplicitFlow** and change the value to    |
 |     > true.                                                           |
